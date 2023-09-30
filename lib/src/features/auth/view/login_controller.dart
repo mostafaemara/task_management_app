@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../repositories/auth_repository.dart';
+import '../../../shared/provider/user_provider.dart';
+import '../data/auth_repository.dart';
 
 final loginControllerProvider = AsyncNotifierProvider<LoginController, void>(
   () => LoginController(),
